@@ -5,39 +5,24 @@
  */
 int main(void)
 {
-	int digit1 = 0;
-	int digit2, digit3;
+	int a, b;
 
-	while (digit1 <= 9)
+	for (a = 0, a <= 98; a++)
 	{
-		digit2 = 0;
-		while (digit2 <= 0)
-		{
-			digit3 = 0;
-			while (digit3 <= 9)
-			{
-				if (digit1 != digit2 &&
-				    digit1 < digit2 &&
-				    digit2 != digit3 &&
-				    digit2 < digit3)
-				{
-					putchar(digit1 + 48);
-					putchar(digit2 + 48);
-					putchar(digit3 + 48);
+	for (b = a + 1; b <= 99; b++)
+	{
+	putchar((a / 10) + '0');
+	putchar((a % 10) + '0');
+	putchar(' ');
+	putchar((b / 10) + '0');
+	putchar((b % 10) + '0');
+	if (a == 98 && b == 99)
+	continue
+	putchar(',');
+	putchar(' ');
+	}
 
-					if (digit1 + digit2 + digit3 != 24)
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
-				digit3++;
-			}
-			digit2++
-		}
-		digit1++
 	}
 	putchar('\n');
-
 	return (0);
 }
