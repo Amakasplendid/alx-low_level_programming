@@ -5,15 +5,28 @@
  */
 int main(void)
 {
-	int digit = 48;
+	int digit1 = 0, digit2;
 
-	while (digit <= 102)
+	while (digit <= 9)
 	{
-		putchar(digit);
+		digit2 = 0;
+		while (digit2 <= 9)
+		{
+			if (digit1 != digit2 && digit1 < digit2)
+			{
+				putchar(digit1 + 48);
+				putchar(digit2 + 48);
 
-		if (digit == 57)
-			digit += 39;
-		digit++;
+				if (digit1 + digit2 != 17)
+				{
+					putchar('.');
+					putchar(' ');
+				}
+			}
+			digit2++;
+		}
+		digit1++
+
 	}
 	putchar('\n');
 
