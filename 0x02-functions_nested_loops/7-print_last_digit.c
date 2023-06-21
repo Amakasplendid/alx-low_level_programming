@@ -1,0 +1,18 @@
+#include "main.h"
+/**
+ * print_last_digit - prints the last value
+ * @n: The number to be determined
+ * Return: value of the last digit
+ */
+int print_last_digit(int n)
+{
+	int last;
+
+	last =  n % 10;
+	if (last < 0)
+	{
+	last = last * -1;
+	}
+	_putchar(last + '0');
+	return (last);
+}
