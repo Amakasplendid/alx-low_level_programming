@@ -1,6 +1,6 @@
 #ifndef _MAIN_H_
 #define _MAIN_H_
-
-void print_square(int size)
-
+int _putchar(char c);
+void print_square(int size);
+int _isupper(int c);
 #endif
