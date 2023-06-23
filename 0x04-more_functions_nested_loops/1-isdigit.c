@@ -1,4 +1,4 @@
-#include" main.h"
+#include "main.h"
 /**
  * _isdigit - function that checks fom 0 to 9
  * @c: The determinant factor
