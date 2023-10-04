@@ -8,7 +8,7 @@
  */
 char *_strdup(char *str)
 {
-	unsigned int i, j;
+	size_t i, j;
 	char *strdout;
 
 	if (str == 0)
@@ -33,4 +33,3 @@ char *_strdup(char *str)
 	}
 	return (strdout);
 }
-
