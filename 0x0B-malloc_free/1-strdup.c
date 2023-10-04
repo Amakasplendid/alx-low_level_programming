@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 #include "stdlib.h"
 /**
@@ -17,7 +16,7 @@ char *_strdup(char *str)
 	}
 
 	i = 0;
-	while (str[i] != '\0'; i++)
+	while (str[i] != '\0')
 	{
 		i++;
 	}
