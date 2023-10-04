@@ -8,7 +8,7 @@
  */
 char *_strdup(char *str)
 {
-	unsigned int a, b;
+	unsigned int i, j;
 	char *strdin;
 
 	if (str == 0)
@@ -16,20 +16,20 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	a = 0;
-	while (str[a] != '\0')
+	i = 0;
+	while (str[i] != '\0')
 	{
-		a++;
+		i++;
 	}
-	strdin = (char *)malloc(sizeof(char) * (a + 1));
+	strdin = (char *)malloc(sizeof(char) * (i + 1));
 
 	if (strdin == NULL)
 	{
 		return (NULL);
 	}
-	for (b = 0; b < 1; b++)
+	for (j = 0; j < 1; j++)
 	{
-		strdin[b] = str[b];
+		strdin[j] = str[j];
 	}
 	return (strdin);
 }
