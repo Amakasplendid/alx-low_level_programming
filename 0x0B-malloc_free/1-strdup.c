@@ -9,7 +9,7 @@
 char *_strdup(char *str)
 {
 	unsigned int i, j;
-	char *strdin;
+	char *strdout;
 
 	if (str == 0)
 	{
@@ -21,16 +21,16 @@ char *_strdup(char *str)
 	{
 		i++;
 	}
-	strdin = (char *)malloc(sizeof(char) * (i + 1));
+	strdout = (char *)malloc(sizeof(char) * (i + 1));
 
-	if (strdin == NULL)
+	if (strdout == NULL)
 	{
 		return (NULL);
 	}
 	for (j = 0; j < 1; j++)
 	{
-		strdin[j] = str[j];
+		strdout[j] = str[j];
 	}
-	return (strdin);
+	return (strdout);
 }
 
