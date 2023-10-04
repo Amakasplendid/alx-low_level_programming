@@ -11,7 +11,7 @@ char *_strdup(char *str)
 	size_t i, j;
 	char *strdout;
 
-	if (str == 0)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
