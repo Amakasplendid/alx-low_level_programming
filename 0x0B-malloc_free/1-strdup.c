@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-#include <stdlib.h>
+#include "stdlib.h"
 /**
  * *_strdup - duplicates memory
  * @str: inputted string
