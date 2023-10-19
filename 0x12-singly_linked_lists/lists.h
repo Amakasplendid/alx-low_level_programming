@@ -13,7 +13,7 @@
  */
 typedef struct list_s
 {
-	char *str
+	char *str;
 	size_t len;
 	struct list_s *next;
 
